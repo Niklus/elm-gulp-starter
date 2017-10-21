@@ -27,7 +27,7 @@ $ npm start
 ```
 
 ### Build
-This will compile, minify and generate service worker in the dist folder 
+This will compile and minify app.js, and generate a service worker in the dist folder 
 
 ```sh
 $ npm run build
