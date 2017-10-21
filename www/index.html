@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ELM App</title>
+    <link rel="manifest" href="manifest.json">
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/skeleton/2.0.4/skeleton.min.css">
+  </head>
+  <body>
+    <!-- App -->
+    <div id="app"></div>
+
+    <!-- Build  -->
+    <script src="app.js"></script>
+    
+    <script>
+      Elm.BeginningElm.embed(document.getElementById("app"));
+    </script>
+
+    <!--Register Service Worker -->
+    <script>
+     if(navigator.serviceWorker) {
+        navigator.serviceWorker.register('/sw.js')
+        .catch(function(err) {
+          console.error('Unable to register service worker.', err);
+        });
+      }
+    </script>
+  </body>
+</html>
