@@ -12,15 +12,15 @@ Install the dependencies
 $ npm install
 ```
 
-Then Run the following and and approve
+...then Run the following and approve
 
 ```sh
 $ npm run elm-packageInstall
 ```
 
 ### Serve
-This will serve the application using browsersync and watch for changes during dev
-Visit http://localhost:8002
+
+This will serve the application and watch for changes during dev. Visit http://localhost:8002
 
 ```sh
 $ npm start
